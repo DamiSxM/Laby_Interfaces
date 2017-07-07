@@ -10,9 +10,14 @@ namespace Laby_Interfaces
     public interface IAffichage
     {
         event Position PositionChanged;
+
+        void LabyUpdate();
+
+        int[] PersoGetPosition();
         void PersoMove(Direction d);
         void PersoTeleport(int x, int y);
 
+        bool PlayerExists(string ip);
         void PlayerAdd(string ip, int x, int y);
         void PlayerMove(string ip, int x, int y);
         void PlayerRemove(string ip);
