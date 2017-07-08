@@ -20,6 +20,8 @@ namespace Laby_Interfaces
 
         List<string> GetClientsIP();
         int GetClientsCount();
+
+        bool IsFinRechercheServer();
         bool IsServer();
     }
 }

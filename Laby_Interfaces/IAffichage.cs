@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,18 +14,24 @@ namespace Laby_Interfaces
         event Position PositionChanged;
 
         void LabyUpdate();
+        void Debug(string message);
 
-        int[] PersoGetPosition();
-        void PersoMove(Direction d);
-        void PersoTeleport(int x, int y);
+        Point PersoGetPosition();
+        //void PersoMove(Direction d);
+        void PersoMoveLeft();
+        void PersoMoveUp();
+        void PersoMoveRight();
+        void PersoMoveDown();
+        void PersoTeleport(Point p);
 
         bool PlayerExists(string ip);
-        void PlayerAdd(string ip, int x, int y);
-        void PlayerMove(string ip, int x, int y);
+        void PlayerAdd(string ip, Point p);
+        void PlayerMove(string ip, Point p);
         void PlayerRemove(string ip);
 
-        void ItemAdd(int x, int y, string nom);
-        void ItemRemove(int x, int y);
+        void ItemsInit(Hashtable ht);
+        void ItemAdd(Point p, string nom);
+        void ItemRemove(Point p);
 
         void Warfog(int lvl);
     }
