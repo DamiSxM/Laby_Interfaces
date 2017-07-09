@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laby_Interfaces
+//namespace Laby_Interfaces
+namespace Labyrinthe
 {
     public interface IDatabase
     {

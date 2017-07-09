@@ -6,8 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laby_Interfaces
+//namespace Laby_Interfaces
+namespace Labyrinthe
 {
+    public enum Loot
+    {
+        CRATE, COIN
+    };
     public delegate void Position(int x, int y);
     public interface IAffichage
     {
@@ -17,7 +22,6 @@ namespace Laby_Interfaces
         void Debug(string message);
 
         Point PersoGetPosition();
-        //void PersoMove(Direction d);
         void PersoMoveLeft();
         void PersoMoveUp();
         void PersoMoveRight();
@@ -30,7 +34,7 @@ namespace Laby_Interfaces
         void PlayerRemove(string ip);
 
         void ItemsInit(Hashtable ht);
-        void ItemAdd(Point p, string nom);
+        void ItemAdd(Point p, Loot nom);
         void ItemRemove(Point p);
 
         void Warfog(int lvl);

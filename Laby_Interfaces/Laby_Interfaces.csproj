@@ -7,7 +7,7 @@
     <ProjectGuid>{E7C638EF-EAFB-4880-8258-D6DA5B9886FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Laby_Interfaces</RootNamespace>
+    <RootNamespace>Labyrinthe</RootNamespace>
     <AssemblyName>Laby_Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
