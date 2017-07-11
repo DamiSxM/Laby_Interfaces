@@ -22,10 +22,11 @@ namespace Labyrinthe
         void Debug(string message);
 
         Point PersoGetPosition();
-        void PersoMoveLeft();
+        void PersoMove(Direction d, int vitesse);
+        /*void PersoMoveLeft();
         void PersoMoveUp();
         void PersoMoveRight();
-        void PersoMoveDown();
+        void PersoMoveDown();*/
         void PersoTeleport(Point p);
 
         bool PlayerExists(string ip);
