@@ -19,18 +19,19 @@ namespace Labyrinthe
         event Position PositionChanged;
 
         void LabyUpdate();
+        int GetCellSize();
+
         void Debug(string message);
 
         Point PersoGetPosition();
+        Point PersoGetPositionPixel();
+
         void PersoMove(Direction d, int vitesse);
-        /*void PersoMoveLeft();
-        void PersoMoveUp();
-        void PersoMoveRight();
-        void PersoMoveDown();*/
         void PersoTeleport(Point p);
 
         bool PlayerExists(string ip);
         void PlayerAdd(string ip, Point p);
+        void PersoMove(Direction d, Point p);
         void PlayerMove(string ip, Point p);
         void PlayerRemove(string ip);
 
