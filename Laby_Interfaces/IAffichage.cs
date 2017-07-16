@@ -39,6 +39,7 @@ namespace Labyrinthe
         void ItemAdd(Point p, Loot nom);
         void ItemRemove(Point p);
 
-        void Warfog(int lvl);
+        void WarfogSet(int lvl);
+        int WarfogGet();
     }
 }
